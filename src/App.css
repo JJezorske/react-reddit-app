@@ -1,26 +1,54 @@
-.App {
+* {
   text-align: center;
+  padding: 0;
+  font-family:cursive;
 }
 
-.App-header {
-  background-color: #3467ce;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+  background-image: linear-gradient(to bottom, rgb(0, 41, 41), black);
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+header:before {
+  content: '/r/:';
+  display: inline-block;
+  color: silver;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  padding: .25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header input {
+  display: inline-block;
+  background: none;
+  border: none;
+  outline: none;
+  color: silver;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  padding: .25rem;
+}
+
+.articles article {
+  padding: .25rem;
+  background-image: linear-gradient(to top, rgb(0, 41, 41), black);
+}
+
+.articles article a {
+  text-decoration: none;
+}
+
+.articles article h3 {
+  color:silver;
+  font-size: 1.5rem;
+}
+
+.articles article:nth-child(2n) {
+  background-image: linear-gradient(to bottom, rgb(0, 41, 41), black);
+}
+
+.articles article h3:hover {
+  color: goldenrod;
 }

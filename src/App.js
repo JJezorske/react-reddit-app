@@ -14,6 +14,7 @@ function App() {
       }
       Response.json().then(Response => {
         if (Response != null) {
+          console.log(Response.data)
           setArticles(Response.data.children);
         }
       })
@@ -23,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <input type="text" className="input" value={subreddit} onChange={e => setSubreddit(e.target.value)}></input>
+        <input type="text" className="input" value={subreddit} onChange={e => setSubreddit(e.target.value)} />
       </header>
       <div className="articles">
         {
